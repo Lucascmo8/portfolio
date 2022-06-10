@@ -9,18 +9,19 @@
 }
 
 aside {
-    display: flex;
-    flex-direction: row;
+    
+    display: block;
+    columns: 2;
 }
 
 aside.left_column {
     display: block;
-    width: 380px;
+    
 }
 
 aside.right_column {
     display: flex;
-    flex-direction: row;
+    /*flex-direction: row;*/
     width: calc(100%-380px);
 }
 
@@ -79,7 +80,8 @@ form > [type="text"],[type="email"],[type="password"] {
     border: 2px solid #767676d9;
     text-align: justify;
     padding: 10px;
-    width: 300px;
+    max-width: 300px;
+    min-width: 100px;
 }
 
 [type="checkbox"] {
