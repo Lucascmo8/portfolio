@@ -121,6 +121,8 @@ div#cabeça {
     text-align: center;
     line-height: 40px;
     margin-top: 60px;
+    margin: auto;
+    padding-top: 50px;
     font-family: var(--fonte_body);
     text-shadow: 1px 1px 5px #00000069;
     max-width: 700px;
