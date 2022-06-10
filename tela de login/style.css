@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Lato' ,sans-serif;
+}
+
+aside {
+    display: flex;
+    flex-direction: row;
+}
+
+aside.left_column {
+    display: block;
+    width: 380px;
+}
+
+aside.right_column {
+    display: flex;
+    flex-direction: row;
+    width: calc(100%-380px);
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    max-width: 760px;
+    min-width: 280px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.476);
+    padding: 10px;
+    
+}
+
+nav a#google {
+    height: 30px;
+    width: 30px;
+    border:  1px solid blue;
+    display: block;
+    border-radius: 50%;
+    background-image: url(midias/assets-desafio-codesigners/google.svg);
+    background-size: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: orangered;
+}
+
+nav {
+    list-style-type: none;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+form > [type="text"],[type="email"],[type="password"] {
+    margin: 5px;
+    height: 1.4em;
+    border-radius: 5px;
+    background-color: #f2f1f19e;
+    border: 2px solid #767676d9;
+    text-align: justify;
+    padding: 10px;
+    width: 300px;
+}
+
+[type="checkbox"] {
+    margin-top: 15px;
+}
+
+.check {
+    color: orangered;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+[type="button"] {
+    padding: 10px;
+    font-size: 1.3em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 150px;
+    border-radius: 8px;
+}
+
+[type="button"].cadastra{
+    background-color: orangered;
+    border: 3px solid orangered;
+    color: white;
+}
+    
+[type="button"].entra {
+    background-color: white;
+    border: 3px solid blue;
+    color: orangered;
+}
+
