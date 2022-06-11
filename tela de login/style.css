@@ -8,10 +8,12 @@
     font-family: 'Lato' ,sans-serif;
 }
 
-aside {
-    
-    display: block;
+main {
     columns: 2;
+}
+
+aside {
+    display: block;
 }
 
 aside.left_column {
@@ -40,16 +42,34 @@ main{
     
 }
 
-nav a#google {
-    height: 30px;
-    width: 30px;
+nav{
+    columns: 4;
+}
+
+nav a {
+    height: 25px;
+    width: 25px;
     border:  1px solid blue;
     display: block;
     border-radius: 50%;
-    background-image: url(midias/assets-desafio-codesigners/google.svg);
-    background-size: 75%;
+    background-size: 70%;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+nav a#google {
+    background-image: url(midias/assets-desafio-codesigners/google.svg);
+}
+
+nav a#facebook{
+    background-image: url(midias/assets-desafio-codesigners/fb.svg);
+    background-size: 50%;
+}
+nav a#twitter{
+background-image: url(midias/assets-desafio-codesigners/twitter.svg);
+}
+nav a#linkedin{
+    background-image: url(midias/assets-desafio-codesigners/in.svg);
 }
 
 h1 {
@@ -108,10 +128,30 @@ form > [type="text"],[type="email"],[type="password"] {
     border: 3px solid orangered;
     color: white;
 }
+
+
+[type="button"].cadastra:hover{
+    background-color: white;
+    color: orangered;
+    transition: 0.5s;
+}
     
 [type="button"].entra {
     background-color: white;
     border: 3px solid blue;
     color: orangered;
+}
+
+[type="button"].entra:hover {
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+img{
+    
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
 }
 
