@@ -1,0 +1,192 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font_main);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    /*Cores*/
+    --color_orange:#d2872c;
+    --color_gray:#766f68;
+    /*font*/
+    --font_main:'Roboto', sans-serif;
+}
+
+header div#head_{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+a#logo{
+    color: var(--color_orange);
+    font-weight: bolder;
+}
+
+div#menu >a{
+    color: var(--color_gray);
+    font-weight: bold;
+}
+
+div#menu >a:hover{
+    background-color: #a3998f5d;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.411);
+    transition: .5s;
+}
+
+div#menu >a:not(:hover){
+    transition: 1s;
+}
+
+div#container{
+    color: var(--color_gray);
+    display: flex;
+}
+
+div#container > div.left > a{
+    color: white;
+    background-color: var(--color_orange);
+    border-radius: 10px;
+}
+
+/* INICIO PORTE PARA MOBILE*/
+
+@media screen and (max-width: 650px) {
+    
+    header div#head_{
+        box-sizing: border-box;
+        height: 10em;
+        padding: 2em;
+    }
+    header div >a#logo{
+        font-size: 2em;
+    }
+    header div#menu{
+        display: none;
+    }
+    button#menu_mobile{
+        cursor: pointer;
+        background: transparent;
+        background-image: url(https://www.pngfind.com/pngs/m/322-3229312_hamburger-menu-icon-png-transparent-png.png);
+        width: 2em;
+        height: 1.8em;
+        background-size: cover;
+        border: transparent;
+    }
+
+    button#menu_mobile>p{
+        display: none;
+    }
+
+    div#container{
+        flex-direction: column-reverse;
+        margin-top: -5%;
+    }
+    
+    div.right{
+        margin: auto;
+        min-height: 200px;
+        max-height: 400px;
+        max-width: 600px;
+        min-width: 280px;
+        background-size: cover;
+        background-position: center;
+        margin-top: -2em;
+    }
+    div.right{
+        background-image: url(Imagem/img_001.png);
+    }
+    div.right > img{
+        display: none;
+    }
+    div#container > div.left{
+        text-align: center;
+        display: block;
+    }
+    div#container > div.left > h1{
+        font-size: 2em;
+    }
+    div#container > div.left > p{
+        font-size: 1.3em;
+        margin-top: 1.5em;
+        
+    }
+    /* Botão*/
+    div#container > div.left > a{
+        display: block;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20px;
+        padding-top:10px ;
+        width: 250px;
+        font-weight: bolder;
+    }
+}
+/* Fim do media query mobile*/
+
+@media screen and (min-width: 651px) {
+    header div#head_{
+        box-sizing: border-box;
+        height: 10em;
+        padding: 2em;
+    }   
+    header div >a#logo{
+        font-size: 2.5em;
+    }
+
+    #menu_mobile{
+        display: none;
+    }
+
+    #menu{
+        font-size: 4vh;
+    }
+
+    #menu>a{
+        padding: 4px;
+    }
+
+    div#container{
+        margin-top: -90px;
+    }
+
+    div.left{
+        box-sizing: border-box;
+        height: 10em;
+        padding: 2em;
+        margin-left: 3em;
+        min-width: 400px;
+    }
+    div.left > h1{
+        font-size: 3em;
+        min-width: 600px;
+    }
+    div.left> p{
+        margin-top: 1.5em;
+        font-size: 1.3em;
+    }
+
+    div#container > div.left > a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin-top: 20px;
+        padding-top:10px ;
+        width: 200px;
+        font-weight: bold;
+    }
+    
+    div.right> img.foto{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        z-index: -1;
+        object-fit: cover;
+        left: -15%;
+    }
+}
