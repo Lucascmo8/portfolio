@@ -1,0 +1,102 @@
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+@media screen and (min-width:611px) {
+    body {
+        background-image: url(midias/blur-1.png), url(midias/blur-2.png), url(midias/rocket-coffee.png);
+        background-size: cover, cover, 700px 350px;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-attachment: fixed;
+        background-position: right top, center bottom, center bottom;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 1.2em;
+    }
+
+    div#logo {
+        background-image: url(midias/logo-desktop.svg);
+        background-repeat: no-repeat;
+        width: 44px;
+        height: 50px;
+    }
+
+    #menu_mobile {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu>a {
+        text-decoration: none;
+        color: var(--text-color);
+        margin-left: 10px;
+    }
+
+    #menu>a:hover {
+        padding: 10px;
+        border-bottom: 8px solid white;
+        transition: 1s;
+
+    }
+
+    #menu>a:not(:hover) {
+        text-decoration: none;
+        color: var(--text-color);
+        margin-left: 10px;
+        transition: 2s;
+    }
+
+    .but_cafe>a {
+        text-decoration: none;
+        color: var(--text-color);
+        border: 3px solid var(--button);
+        border-radius: 5px;
+        font-size: 1em;
+        font-weight: bold;
+        padding: 2px 15px 2px 15px;
+    }
+
+    .but_cafe>a:hover {
+        border: 3px solid#9577db;
+        box-shadow: 0px 0px 10px #9577db;
+        background-color: #9577db;
+        color: #000;
+        transition: 1s;
+    }
+
+    .but_cafe>a:not(:hover) {
+        transition: 2s;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    div#container>h1 {
+        color: var(--text-color);
+        text-align: center;
+        font-size: 7.5vmax;
+        text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
+    }
+
+    div#container>h1>span {
+        
+        background: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color:transparent ;
+        -webkit-text-stroke: .2vw var(--text-color);
+
+    }
+}

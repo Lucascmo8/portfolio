@@ -43,6 +43,10 @@ nav {
     width: 100%;
     box-shadow: 3px 3px 10px #00000069;
 }
+#logo>img{
+    height: 25px;
+    width: 25px;
+}
 
 nav > [type="checkbox"] {
     appearance: none;
