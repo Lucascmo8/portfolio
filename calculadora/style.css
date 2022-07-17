@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-*{
+
+* {
     margin: 0px;
     padding: 0px;
     font-family: 'Fredoka One';
 }
 
-body{
+*:focus {
+    outline: 0;
+}
+
+body {
     background-color: black;
 }
 
@@ -15,19 +20,19 @@ main {
     margin-top: 50px;
 }
 
-form{
+form {
     padding: 10px;
     padding-top: 10px;
     box-shadow: 0 3px 0 yellow;
-    cursor: auto;    
+    cursor: auto;
 }
 
-input{
+input {
     border-radius: 5px;
     cursor: pointer;
 }
 
-.text{
+.text {
     display: flex;
     min-height: 60px;
     max-height: 80px;
@@ -35,6 +40,7 @@ input{
     margin: auto;
     margin-top: 10px;
 }
+
 .text#res {
     background-color: rgb(37, 37, 0);
     color: white;
@@ -45,18 +51,25 @@ input{
     cursor: auto;
 }
 
-[type="submit"].text#clean{
+[type="submit"].text#clean {
     display: block;
     border: 1px solid red;
     background-color: black;
     color: white;
     font-size: 20px;
-    padding: 10px;    
+    padding: 10px;
     text-align: center;
     box-shadow: 0 3px 0 red;
 }
 
-[type="submit"].text#clean:hover{
+[type="submit"].text#clean:hover {
+    background-color: red;
+    transition: 0.5s;
+    text-shadow: 0px 0px 5px white;
+    box-shadow: 0px 0px 10px red;
+}
+
+[type="submit"].text#clean:focus {
     background-color: red;
     transition: 0.5s;
     text-shadow: 0px 0px 5px white;
@@ -73,9 +86,10 @@ form {
     margin: auto;
 }
 
-form:hover{
+form:hover {
     box-shadow: 0px 0px 10px yellow;
 }
+
 .num {
     height: 40px;
     width: 60px;
@@ -90,7 +104,16 @@ form:hover{
     font-size: 19px;
 }
 
-div#teclas{
+.num:focus {
+    background-color: rgb(251, 255, 0);
+    color: black;
+    border: transparent;
+    transition: 0.5s;
+    box-shadow: 0px 0px 10px rgb(251, 255, 0);
+}
+
+
+div#teclas {
     margin: 0px 0px 10px 8px;
 }
 
