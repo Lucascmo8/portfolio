@@ -1,12 +1,6 @@
 /*Configuração Gerais*/
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 
-* {
-    font-family: 'Manrope', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 :root {
     --backgrond: #000;
     --text-color: #FFF;
@@ -16,30 +10,20 @@
     --text-color-menu-mobile: #E1E1E6;
 }
 
-body {
-    background-color: var(--backgrond);
-}
+
 
 /*layout de mobile*/
-@media screen and (max-width:610px) {
+@media screen and (max-width:792px) {
 
     /* background com os copos e efeitos roxo */
     body {
-        background-image: url(midias/blur-mobile.png), url(midias/rocket-coffee.png);
-        background-size: cover, contain;
-        background-repeat: no-repeat;
-        height: 100%;
+        background-image: url(midias/blur-mobile.png);
+        background-size: cover;
         background-attachment: fixed;
-        background-position: center, bottom center;
+        background-position: center;
     }
 
     /*Inicio do header*/
-
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 1.2em;
-    }
 
     div#logo {
         background-image: url(midias/logo-mobile.svg);
@@ -51,22 +35,26 @@ body {
     header>nav#menu {
         display: block;
         position: absolute;
+        z-index: 1000;
+
         width: 100%;
         top: 72px;
-        right: 0px;
         height: 0px;
-        z-index: 1000;
-        transition: .8s;
+        right: 0px;
+
         visibility: hidden;
         overflow-y: hidden;
+
+        transition: .8s;
     }
 
     #menu.active {
         height: calc(100vh - 72px);
+
         display: flex;
         flex-direction: column;
-        background-color: transparent;
-        backdrop-filter: blur(5px);
+        background-color: var(--backgrond);
+
         visibility: visible;
         overflow-y: auto;
     }
@@ -78,16 +66,21 @@ body {
     #menu.active>a {
         display: block;
         text-decoration: none;
-        color: white;
-        font-weight: 700;
+        color: var(--text-color-menu-mobile);
+        font: 18px 700;
         padding: 1em;
-        margin: 0 1em;
-        border-bottom: 2px solid white;
+        margin: 0;
+        color: var(--border-menu-mobile);
+        border-bottom: 1px solid var(--border-menu-mobile);
+        border-top: 1px solid var(--border-menu-mobile);
+        border-left: 5px solid transparent;
+        box-sizing: border-box;
     }
 
     #menu.active>a:hover {
-        border: 4px solid;
-        transition: 0.5s;
+        border-left: 5px solid var(--button);
+        color: white;
+        transition: 0.4s ease-in-out;
     }
 
     header>div.but_cafe {
@@ -127,8 +120,7 @@ body {
 
     div#container>p {
         color: var(--text-color);
-        font-size: 8vw;
-        font-family: var();
+        font-size: 6vw;
         font-weight: 700;
     }
 
@@ -163,17 +155,15 @@ body {
     }
 
     div#container>h1 {
-        color: var(--text-color);
         margin-top: 12%;
         font-size: 9vw;
-        text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
     }
 
     /*Personalização do Great code*/
-    div#container>h1>span {
-        background: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: .2vw var(--text-color);
+
+    footer {
+        flex-grow:1 ;
+        min-height: 200px;
+        max-height: 350px;
     }
 }

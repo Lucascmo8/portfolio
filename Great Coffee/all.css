@@ -1,0 +1,71 @@
+/*Configuração Gerais*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+* {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --backgrond: #000;
+    --text-color: #FFF;
+    --button: #8257E5;
+    --border: #29292E;
+    --border-menu-mobile: #A8A8B3;
+    --text-color-menu-mobile: #E1E1E6;
+}
+
+body {
+    height: 100vh;
+
+    background-color: var(--backgrond);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/*Inicio do header*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2em;
+    align-items: center;
+}
+
+div#logo {
+    background-repeat: no-repeat;
+}
+
+/*Fim da parte do header*/
+
+/*Parte dos textos e botão de pegar café*/
+div#container>h1 {
+    color: var(--text-color);
+    text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
+}
+
+div#container>h1>span {
+    background: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: .2vw var(--button);
+}
+
+footer {
+    width: 100%;
+
+    background-image: url(../midias/rocket-coffee.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+
+    margin-top: auto;
+    margin-bottom: 0;
+    bottom: 0;
+    justify-self: center;
+    align-items: flex-end;
+}

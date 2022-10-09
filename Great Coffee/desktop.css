@@ -9,30 +9,30 @@
 }
 
 /*layout de Desktop*/
-@media screen and (min-width:611px) {
+@media screen and (min-width:792px) {
 
     /* background com os copos e efeitos roxo */
     body {
-        background-image: url(midias/blur-1.png), url(midias/blur-2.png), url(midias/rocket-coffee.png);
-        background-size: cover, cover, 700px 350px;
-        background-repeat: no-repeat;
-        height: 100%;
-        background-attachment: fixed;
-        background-position: right top, center bottom, center bottom;
+        background-image: url(midias/blur-1.png), url(midias/blur-2.png);
+        background-size: cover, cover;
+        background-position: right top, center bottom;
+
+        justify-content: space-evenly;
     }
 
     /*Inicio do header*/
     header {
-        display: flex;
-        justify-content: space-around;
-        padding: 1.2em;
+        flex-grow: 0;
     }
 
     div#logo {
         background-image: url(midias/logo-desktop.svg);
-        background-repeat: no-repeat;
-        width: 44px;
+        background-position: right;
+
+        width: 150px;
         height: 50px;
+
+        flex-grow: 1;
     }
 
     #menu_mobile {
@@ -41,27 +41,35 @@
 
     /*Menu desktop*/
     #menu {
+        justify-self: center;
         display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-grow: 2;
+        flex-shrink: 0;
+
     }
 
     #menu>a {
         text-decoration: none;
         color: var(--text-color);
-        margin-left: 10px;
+        border-bottom: 3px transparent;
+        padding: 10px;
     }
 
     #menu>a:hover {
-        padding: 10px;
-        border-bottom: 8px solid white;
-        transition: 1s;
-
+        color: var(--button);
+        transition: .3s;
     }
 
     #menu>a:not(:hover) {
         text-decoration: none;
         color: var(--text-color);
-        margin-left: 10px;
-        transition: 2s;
+        transition: 0.3s;
+    }
+
+    .but_cafe {
+        flex-grow: 1;
     }
 
     .but_cafe>a {
@@ -72,6 +80,9 @@
         font-size: 1em;
         font-weight: bold;
         padding: 2px 15px 2px 15px;
+
+        box-sizing: border-box;
+        width: 100%;
     }
 
     .but_cafe>a:hover {
@@ -93,17 +104,20 @@
         display: none;
     }
 
-    div#container>h1 {
-        color: var(--text-color);
-        text-align: center;
-        font-size: 7.5vmax;
-        text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
+    div#container {
+        flex-grow: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
-    div#container>h1>span {
-        background: transparent;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: .2vw var(--text-color);
+    div#container>h1 {
+        text-align: center;
+        font-size: 80px;
+    }
+
+    footer {
+        flex-grow: 2;
     }
 }
