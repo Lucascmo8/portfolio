@@ -75,3 +75,4 @@ function mostrar(){
     }
 }
 
+console.log(window.location)
