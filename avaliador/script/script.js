@@ -74,5 +74,3 @@ function mostrar(){
         alert(`Please select an option`)
     }
 }
-
-alert(window.location)
