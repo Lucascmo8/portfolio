@@ -58,7 +58,7 @@ div#container>h1>span {
 footer {
     width: 100%;
 
-    background-image: url(../midias/rocket-coffee.png);
+    background-image: url(midias/rocket-coffee.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center bottom;
