@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    font-family: "Overpass", sans-serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    padding: 20px;
+
+    background-color: hsl(213, 19%, 18%);
+    box-shadow: 1px 1px 10px black;
+
+    transition: all ease 1s;
+}
+
+#rater {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+#star {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    padding: 2px;
+    background: hsl(220, 6%, 29%) url(icon-star.svg) no-repeat center /25px 25px;
+}
+
+h1 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(216, 12%, 54%);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+
+    text-align: center;
+    padding: 10px;
+
+    background-color: hsl(220, 6%, 29%);
+    color: hsl(217, 12%, 63%);
+}
+
+.last {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+li:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+button {
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(25, 97%, 53%);
+
+    cursor: pointer;
+}
+
+/* Parte final */
+#finish {
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+    height: 100%;
+}
+
+#avaliacao {
+    background-color: hsl(220, 6%, 29%);
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    padding: 2px;
+    width: 170px;
+    height: 22px;
+    align-self: center;
+    border-radius: 100px;
+    vertical-align: middle;
+}
+
+#mbImg {
+    align-self: center;
+    /* width: 32px;
+    height:32px ; */
+    width: 80%;
+    height: 125px;
+    padding: 2px;
+    background: url(../images/illustration-thank-you.svg) no-repeat center /200px 120px;
+}
+
+@media (max-width:375px){
+    main{
+        width: 230px;
+        padding: 15px;
+    }
+}
