@@ -1,21 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.tailwindcss.com"></script>  
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Time tracking dashboard</title>
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      font-family: Rubik, sans-serif;
+    }
+    body{
+      background-color: hsl(226, 43%, 10%);
+    }
   </style>
 </head>
-<body>
 
-  
+<body class="flex  flex-col gap-10 py-10 items-center">
+  <!-- Perfil -->
+  <div id="cardPerfil" class="bg-blue-900 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <div class="bg-blue-600 w-full h-4/6 z-10 rounded-2xl px-4 flex  justify-evenly items-center box-border text-white">
+      <img src="images/image-jeremy.png" alt="jeremy photo" class="h-20 w-20 border-white border-solid border-spacing-1 border-2 rounded-full">
+      <div class="flex flex-col">
+        <h2 class="text-lg">Report for</h2>
+        <h1 class="text-2xl">Jeremy Robson</h1>
+      </div>
+    </div>
+    <ul class="flex justify-evenly align-middle my-auto text-blue-200">
+      <li class="hover:text-white">Daily</li>
+      <li class="hover:text-white">Weekly</li>
+      <li class="hover:text-white">Monthly</li>
+    </ul>
+  </div>
+  <!-- Work -->
+  <div id="cardWork" class="bg-orange-500 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <img src="images/icon-work.svg" alt="" class="w-16 self-end mr-2 mt-0">
+    <div
+      class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
+      <div class="flex justify-between align-middle h-5">
+        <h1 class="text-xl font-bold">Work</h1>
+        <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
+      </div>
+      <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
+        <h2 class="text-5xl sm:ml-2 font-light ">32hrs</h2>
+        <span class="self-center sm:self-start text-blue-200">Last Week - 36hrs</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- play -->
+  <div id="cardPlay" class="bg-blue-300 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <img src="images/icon-play.svg" alt="" class="w-16 self-end mr-2 mt-0">
+    <div
+      class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
+      <div class="flex justify-between align-middle h-5">
+        <h1 class="text-xl font-bold">Play</h1>
+        <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
+      </div>
+      <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
+        <h2 class="text-5xl sm:ml-2 font-light ">10hrs</h2>
+        <span class="self-center sm:self-start text-blue-200">Last Week - 8hrs</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Exercise -->
+  <div id="cardExercise" class="bg-green-400 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <img src="images/icon-exercise.svg" alt="" class="w-16 self-end mr-2 mt-0">
+    <div
+      class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
+      <div class="flex justify-between align-middle h-5">
+        <h1 class="text-xl font-bold">Exercise</h1>
+        <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
+      </div>
+      <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
+        <h2 class="text-5xl sm:ml-2 font-light ">4hrs</h2>
+        <span class="self-center sm:self-start text-blue-200">Last Week - 5hrs</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Social -->
+  <div id="cardSocial" class="bg-purple-700 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <img src="images/icon-social.svg" alt="" class="w-16 self-end mr-2 mt-0">
+    <div
+      class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
+      <div class="flex justify-between align-middle h-5">
+        <h1 class="text-xl font-bold">Social</h1>
+        <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
+      </div>
+      <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
+        <h2 class="text-5xl sm:ml-2 font-light ">5hrs</h2>
+        <span class="self-center sm:self-start text-blue-200">Last Week - 10hrs</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Self Care -->
+  <div id="cardSelfCare" class="bg-yellow-300 rounded-2xl flex flex-col justify-between h-52 w-80 relative">
+    <img src="images/icon-self-care.svg" alt="" class="w-16 self-end mr-2 mt-0">
+    <div
+      class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
+      <div class="flex justify-between align-middle h-5">
+        <h1 class="text-xl font-bold">Self Care</h1>
+        <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
+      </div>
+      <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
+        <h2 class="text-5xl sm:ml-2 font-light ">2hrs</h2>
+        <span class="self-center sm:self-start text-blue-200">Last Week - 2hrs</span>
+      </div>
+    </div>
+  </div>
   </div>
 </body>
+
 </html>
