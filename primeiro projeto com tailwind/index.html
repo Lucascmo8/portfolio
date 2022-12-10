@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lg:h-screen flex justify-center items-center">
 
 <head>
   <meta charset="UTF-8">
@@ -21,25 +21,25 @@
   </style>
 </head>
 
-<body class="flex  flex-col gap-10 py-10 px-8 items-center w-screen sm:grid sm:grid-rows-4 sm:grid-cols-2">
+<body class="flex  flex-col gap-10 py-10 px-8 items-center w-screen sm:grid sm:grid-rows-4 sm:grid-cols-2 lg:grid-rows-2 lg:grid-cols-4 lg:h-2/3 lg:py-0 xl:px-40">
   <!-- Perfil -->
-  <div id="cardPerfil" class="bg-blue-900 rounded-2xl flex flex-col justify-between h-52 w-full relative sm:col-start-1 sm:col-end-3 sm:flex-row">
-    <div class="bg-blue-600 w-full h-4/6 z-10 rounded-2xl px-4 flex  justify-evenly items-center box-border gap-4 text-white sm:h-full sm:gap-0">
+  <div id="cardPerfil" class="bg-blue-900 rounded-2xl flex flex-col justify-between h-52 w-full relative sm:col-start-1 sm:col-end-3 sm:flex-row lg:col-end-2 lg:row-start-1 lg:row-end-3 lg:h-full lg:flex-col">
+    <div class="bg-blue-600 w-full h-4/6 z-10 rounded-2xl px-4 flex  justify-evenly items-center box-border gap-4 text-white sm:h-full sm:gap-0 lg:flex-col lg:items-start lg:p-5">
       <img src="images/image-jeremy.png" alt="jeremy photo"
-        class="h-20 w-20 border-white border-solid border-spacing-1 border-2 rounded-full sm:h-24 sm:w-24 ">
+        class="h-20 w-20 border-white border-solid border-spacing-1 border-2 rounded-full sm:h-24 sm:w-24 lg:self-start lg:h-20 lg:w-20">
       <div class="flex flex-col">
         <h2 class="text-lg sm:text-xl">Report for</h2>
-        <h1 class="text-3xl">Jeremy Robson</h1>
+        <h1 class="text-4xl lg:w-2/4">Jeremy Robson</h1>
       </div>
     </div>
-    <ul class="flex justify-evenly align-middle my-auto text-blue-200 sm:flex-col sm:w-1/3 sm:text-2xl sm:items-center sm:justify-evenly sm:h-full">
+    <ul class="flex justify-evenly align-middle my-auto text-blue-200 sm:flex-col sm:w-1/3 sm:text-2xl sm:items-center sm:justify-evenly sm:h-full lg:items-start lg:px-4 lg:h-2/5 lg:text-xl">
       <li class="hover:text-white">Daily</li>
       <li class="hover:text-white">Weekly</li>
       <li class="hover:text-white">Monthly</li>
     </ul>
   </div>
   <!-- Work -->
-  <div id="cardWork" class="bg-orange-500 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardWork" class="bg-orange-400 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full">
     <img src="images/icon-work.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -48,14 +48,14 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">32hrs</h2>
+        <h2 class="text-5xl font-light ">32hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 36hrs</span>
       </div>
     </div>
   </div>
   </div>
   <!-- play -->
-  <div id="cardPlay" class="bg-blue-300 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardPlay" class="bg-blue-300 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full">
     <img src="images/icon-play.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -64,14 +64,14 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">10hrs</h2>
+        <h2 class="text-5xl font-light ">10hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 8hrs</span>
       </div>
     </div>
   </div>
   </div>
   <!-- study -->
-  <div id="cardStudy" class="bg-red-400 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardStudy" class="bg-red-400 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full">
     <img src="images/icon-study.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -80,14 +80,14 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">4hrs</h2>
+        <h2 class="text-5xl font-light ">4hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 7hrs</span>
       </div>
     </div>
   </div>
   </div>
   <!-- Exercise -->
-  <div id="cardExercise" class="bg-green-400 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardExercise" class="bg-green-400 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full">
     <img src="images/icon-exercise.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -96,14 +96,14 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">4hrs</h2>
+        <h2 class="text-5xl font-light ">4hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 5hrs</span>
       </div>
     </div>
   </div>
   </div>
   <!-- Social -->
-  <div id="cardSocial" class="bg-purple-700 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardSocial" class="bg-purple-700 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full">
     <img src="images/icon-social.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -112,14 +112,14 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">5hrs</h2>
+        <h2 class="text-5xl font-light ">5hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 10hrs</span>
       </div>
     </div>
   </div>
   </div>
   <!-- Self Care -->
-  <div id="cardSelfCare" class="bg-yellow-300 rounded-2xl flex flex-col justify-between h-52 w-full relative">
+  <div id="cardSelfCare" class="bg-yellow-300 rounded-2xl flex flex-col justify-between h-52 w-full relative lg:h-full ">
     <img src="images/icon-self-care.svg" alt="" class="w-16 self-end mr-2 mt-0">
     <div
       class="bg-blue-900 w-full h-5/6 z-10 absolute bottom-0 rounded-2xl px-4 flex flex-col justify-evenly box-border text-white font-rubik">
@@ -128,7 +128,7 @@
         <img src="images/icon-ellipsis.svg" alt="more information" class="h-1 s mr-1 ">
       </div>
       <div class="flex align-middle justify-between sm:flex-col sm:justify-between">
-        <h2 class="text-5xl sm:ml-2 font-light ">2hrs</h2>
+        <h2 class="text-5xl font-light ">2hrs</h2>
         <span class="self-center sm:self-start text-blue-200">Last Week - 2hrs</span>
       </div>
     </div>
