@@ -17,7 +17,7 @@ body {
     font-family: "Overpass", sans-serif;
 }
 
-main {
+form {
     height: 300px;
     width: 300px;
 
@@ -59,14 +59,14 @@ p {
     font-size: 15px;
 }
 
-ul {
+#radios {
     display: flex;
     justify-content: space-between;
 
     list-style: none;
 }
 
-li {
+label {
     height: 20px;
     width: 20px;
 
@@ -79,27 +79,38 @@ li {
 
 }
 
-.last {
+input[type=radio]{
+    display:none
+}
+
+#num1:checked ~ label.num1,#num2:checked ~ label.num2,#num3:checked ~ label.num3,
+#num4:checked ~ label.num4,#num5:checked ~ label.num5{
     background-color: hsl(217, 12%, 63%);
     color: hsl(0, 0%, 100%);
 }
 
-li:hover {
+label:hover {
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
 
     cursor: pointer;
 }
 
-button {
+input[type=submit] {
     height: 35px;
     width: 100%;
 
     background-color: hsl(25, 97%, 53%);
+    color: white;
     border-radius: 50px;
     border: none;
 
     cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: white;
+    color: hsl(25, 97%, 53%);
 }
 
 /* Parte final */
@@ -137,7 +148,7 @@ button {
 }
 
 @media (max-width:375px){
-    main{
+    form{
         width: 230px;
         padding: 15px;
     }
