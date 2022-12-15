@@ -145,7 +145,10 @@ function confirmar5() {
     completo()
 }
 
-
+function fim(){
+alert(`Parabens Você Completou o Desafio`)
+setTimeout(resetar,2000)
+}
 
 function completo() {
     function completo6 (index){
@@ -158,8 +161,7 @@ function completo() {
     var completo_6 = completo6([th_0 , th_1, th_2, th_3, th_4, th_5])
     var somaTotal = Number(input0.value) + Number(input1.value) + Number(input2.value) + Number(input3.value) + Number(input4.value) + Number(input5.value) + Number(input6.value) + Number(input7.value) + Number(input8.value)
     if (somaTotal == 45 && completo_6 == 6 && Number(input0.value) >= 0 &&Number(input1.value) >= 0 &&Number(input2.value) >= 0 &&Number(input3.value) >= 0 &&Number(input4.value) >= 0 &&Number(input5.value) >= 0 &&Number(input6.value) >= 0 &&Number(input7.value) >= 0 &&Number(input8.value) >= 0) {
-        alert(`Parabens Você Completou o desafio`)
-        resetar()
+        setTimeout(fim,3000)
     }
 }
 
