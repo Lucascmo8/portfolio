@@ -153,19 +153,21 @@ form {
 form > [type="text"],[type="email"],[type="number"]{
     margin-top:3px;
     height: 36px;
-    width: 90%;
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
     border-radius: 10px;
     border: transparent;
     font-size: 20px;
     margin-bottom: 15px;
     outline: none;
+    
 }
 
 form > select {
     margin-top:3px;
     height: 46px;
-    width: 94%;
+    width: 100%;
     padding-left: 10px;
     border-radius: 10px;
     border: transparent;
@@ -269,14 +271,14 @@ background-color: var(--cor_butsunav);
 textarea {
     background-color: white;
     border-radius:10px;
-    width: 90%;
+    width: 100%;
     outline: none;
 }
 
 form [type="submit"] {
     background-color: var(--cor_submit);
     color: var(--cor_fontnav);
-    width: 90%;
+    width: 100%;
     border: transparent;
     border-radius: 10px;
     height: 32px;
