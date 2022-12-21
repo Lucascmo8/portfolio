@@ -1,106 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+<style>
+    * {
+        font-family: "Inter", sans-serif;
+    }
+
+    #entrevistaImagem {
+        min-height: 480px;
+
+        max-height: 580px;
+
+        /* width: 90%; */
+
+    }
+    #vagas{
+    }
+</style>
 <script>
     tailwind.config = {
-  theme: {
-    extend: {
-      flexGrow: {
-        '2': 2
-      }
+        theme: {
+            extend: {
+                flexGrow: {
+                    '2': 2
+                }
+            }
+        }
     }
-  }
-}
 </script>
-<body>
 
-    <header class="flex justify-around  w-screen p-6 shadow-md z-10">
-        <div class="flex items-center grow"><img src="logo.svg" alt="Logo" class="mr-2"><p>OptimusTech</p></div>
+<body class="box-border">
+
+    <header class="flex justify-around z-50 h-20 w-screen py-7 px-8 shadow-md fixed bg-white items-center">
+        <div class="flex items-center">
+            <img src="logo.svg" alt="Logo" class="mr-2">
+            <p class="font-semibold text-xl">OptimusTech</p>
+        </div>
         <nav class="grow-[2]">
-            <ul class="flex justify-between">
-                <li><a href="">Homa</a></li>
+            <ul class="flex justify-evenly font-medium text-gray-400">
+                <li><a href="">Home</a></li>
                 <li><a href="">Produtos</a></li>
                 <li><a href="">Recursos</a></li>
                 <li><a href="">Sobre nós</a></li>
             </ul>
         </nav>
         <div class="grow flex justify-center">
-            <button>Entrar</button>
-            <button>Cadastrar</button>
+            <button class="p-3">Entrar</button>
+            <button class="bg-red-900 text-white rounded-xl p-3 box-border">Cadastrar</button>
         </div>
-    </header>
+    </header><br>
 
 
-    <section id="sobreNós" class="text-center">
+    <section id="sobreNós" class="text-center mt-20 mb-20">
 
 
-        <div id="sobreTexto">
-            <h1>
-                <span>Sobre nós</span><br>
+        <div id="sobreTexto" class="h-96 flex flex-col justify-evenly">
+            <h1 class="text-6xl leading-snug font-semibold">
+                <span class="text-base text-red-800 font-semibold">Sobre nós</span><br>
                 Por que somos diferentes?
             </h1>
-            <p>Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+            <p class="font-normal text-gray-400 text-xl max-w-4xl self-center text-center">Nós focamos nos detalhes de
+                tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente
+                importante para elas.</p>
         </div>
 
 
-        <div id="curiosidades" class="flex flex-wrap">
-            <div class="flex flex-col justify-evenly">
-                <h2>400+</h2>
-                <h3>Projetos concluídos</h3>
-                <p>Nós ajudamos a construir mais de 400 projetos incríveis.</p>
+        <div id="curiosidades" class="flex flex-wrap justify-around mt-9">
+            <div class="flex flex-col justify-evenly w-64 h-44 text-left">
+                <h2 class="text-red-800 font-semibold text-6xl">400+</h2>
+                <h3 class="font-bold">Projetos concluídos</h3>
+                <p class="text-gray-400">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
             </div>
-            <div>
-                <h2>100+</h2>
-                <h3>Colaboradores</h3>
-                <p>Temos mais de 100 colaboradores no nosso time que se preocupam com nossos clientes.</p>
+            <div class="flex flex-col justify-evenly w-72 h-44 text-left">
+                <h2 class="text-red-800 font-semibold text-6xl">100+</h2>
+                <h3 class="font-bold">Colaboradores</h3>
+                <p class="text-gray-400">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos
+                    clientes.</p>
             </div>
-            <div>
-                <h2>20k</h2>
-                <h3>Downloads</h3>
-                <p>Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000 vezes.</p>
+            <div class="flex flex-col justify-evenly w-64 h-44 text-left">
+                <h2 class="text-red-800 font-semibold text-6xl">20k</h2>
+                <h3 class="font-bold">Downloads</h3>
+                <p class="text-gray-400">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000
+                    vezes.</p>
             </div>
-            <div>
-                <h2>500+</h2>
-                <h3>Reviews 5 estrelas</h3>
-                <p>Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos produtos.</p>
+            <div class="flex flex-col justify-evenly w-72 h-44 text-left">
+                <h2 class="text-red-800 font-semibold text-6xl">500+</h2>
+                <h3 class="font-bold">Reviews 5 estrelas</h3>
+                <p class="text-gray-400">Estamos orgulhosos de contar com mais de 500 reviews 5 estrelas em nossos
+                    produtos.</p>
             </div>
         </div>
     </section>
 
 
-    <section id="vagasAbertas">
-        <div>
-            <h1>
-                <span>Vagas abertas!</span><br>
+    <section id="vagasAbertas" class="flex flex-col justify-evenly items-center w-full p-8">
+        <div class="text-center h-72 flex flex-col justify-evenly">
+            <h1 class="text-6xl leading-snug font-semibold">
+                <span class="text-base text-red-800 font-semibold bg-red-100 py-2 px-4 rounded-full">Vagas
+                    abertas!</span><br>
                 Estamos procurando por talentos
             </h1>
-            <p>Somos uma equipe 100% remota com pessoas do Brasil inteiro.</p>
-            
+            <p class="font-normal text-gray-400 text-xl self-center text-center">Somos uma equipe 100% remota com
+                pessoas do Brasil inteiro.</p>
+
         </div>
-        <img src="entrevista.svg" alt="">
-        <div>
-            <h2>Design</h2>
-            <div>
-                <h3>Product Designer</h3>
+        <div id="entrevistaImagem" class="bg-[url('entrevista.svg')] bg-no-repeat bg-cover bg-top-center w-11/12">
+        </div>
+        <div id="vagas" class="mt-11 w-2/4">
+            <h2 class="text-xl font-medium">Design</h2>
+            <div class="p-2 border border-solid border-gray-300 rounded-2xl shadow-md mt-2">
+                <h3 class="text-lg font-medium">Product Designer</h3>
                 <ul>
                     <li>Full-time</li>
                     <li>Faixa salarial: R$7.000</li>
                 </ul>
             </div>
-            <div>
+            <div class="p-2 border border-solid border-gray-300 rounded-2xl shadow-md mt-2">
                 <h3>UX Designer</h3>
                 <ul>
                     <li>Full-time</li>
                     <li>Faixa salarial: R$6.000</li>
                 </ul>
             </div>
-            <h2>Desenvolvimento de Software</h2>
+            <h2 class="text-xl font-medium">Desenvolvimento de Software</h2>
             <div>
                 <h3>Desenvolvedor(a) iOS</h3>
                 <ul>
@@ -128,7 +160,8 @@
     <aside>
         <h1>
             <span>Veja o que nossos colaboradores falam sobre nós</span><br>
-            OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.
+            OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio
+            possível.
         </h1>
         <img src="julia.svg" alt="Júlia Castro">
         <h2>Júlia Castro</h2>
@@ -145,4 +178,5 @@
         <a>© 2022 OptimusTech. Todos os direitos reservados.</a>
     </footer>
 </body>
+
 </html>
