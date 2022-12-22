@@ -16,15 +16,10 @@
         font-family: "Inter", sans-serif;
     }
 
-    #entrevistaImagem {
+    #entrevistaImagem, #OpiniãoDosColaboradores, footer{
         min-height: 480px;
 
         max-height: 580px;
-
-        /* width: 90%; */
-
-    }
-    #vagas{
     }
 </style>
 <script>
@@ -39,9 +34,9 @@
     }
 </script>
 
-<body class="box-border">
+<body class="box-border flex flex-col justify-evenly items-center">
 
-    <header class="flex justify-around z-50 h-20 w-screen py-7 px-8 shadow-md fixed bg-white items-center">
+    <header class="flex justify-around top-0 fixed h-20 w-screen py-7 px-8 shadow-md  bg-white items-center">
         <div class="flex items-center">
             <img src="logo.svg" alt="Logo" class="mr-2">
             <p class="font-semibold text-xl">OptimusTech</p>
@@ -54,45 +49,52 @@
                 <li><a href="">Sobre nós</a></li>
             </ul>
         </nav>
+        
         <div class="grow flex justify-center">
             <button class="p-3">Entrar</button>
             <button class="bg-red-900 text-white rounded-xl p-3 box-border">Cadastrar</button>
         </div>
-    </header><br>
+    </header>
 
 
     <section id="sobreNós" class="text-center mt-20 mb-20">
 
 
         <div id="sobreTexto" class="h-96 flex flex-col justify-evenly">
+
             <h1 class="text-6xl leading-snug font-semibold">
                 <span class="text-base text-red-800 font-semibold">Sobre nós</span><br>
                 Por que somos diferentes?
             </h1>
+
             <p class="font-normal text-gray-400 text-xl max-w-4xl self-center text-center">Nós focamos nos detalhes de
                 tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente
                 importante para elas.</p>
         </div>
 
 
-        <div id="curiosidades" class="flex flex-wrap justify-around mt-9">
+        <div id="curiosidades" class="flex flex-wrap justify-around mt-9 gap-8">
+
             <div class="flex flex-col justify-evenly w-64 h-44 text-left">
                 <h2 class="text-red-800 font-semibold text-6xl">400+</h2>
                 <h3 class="font-bold">Projetos concluídos</h3>
                 <p class="text-gray-400">Nós ajudamos a construir mais de 400 projetos incríveis.</p>
             </div>
+
             <div class="flex flex-col justify-evenly w-72 h-44 text-left">
                 <h2 class="text-red-800 font-semibold text-6xl">100+</h2>
                 <h3 class="font-bold">Colaboradores</h3>
                 <p class="text-gray-400">Temos mais de 100 colaboradores no nosso time que se preocupam com nossos
                     clientes.</p>
             </div>
+
             <div class="flex flex-col justify-evenly w-64 h-44 text-left">
                 <h2 class="text-red-800 font-semibold text-6xl">20k</h2>
                 <h3 class="font-bold">Downloads</h3>
                 <p class="text-gray-400">Nossos projetos que estão disponíveis em lojas já foram baixados mais de 20.000
                     vezes.</p>
             </div>
+
             <div class="flex flex-col justify-evenly w-72 h-44 text-left">
                 <h2 class="text-red-800 font-semibold text-6xl">500+</h2>
                 <h3 class="font-bold">Reviews 5 estrelas</h3>
@@ -106,7 +108,7 @@
     <section id="vagasAbertas" class="flex flex-col justify-evenly items-center w-full p-8">
         <div class="text-center h-72 flex flex-col justify-evenly">
             <h1 class="text-6xl leading-snug font-semibold">
-                <span class="text-base text-red-800 font-semibold bg-red-100 py-2 px-4 rounded-full">Vagas
+                <span class="text-base text-red-800 font-semibold bg-red-50 py-2 px-4 rounded-full">Vagas
                     abertas!</span><br>
                 Estamos procurando por talentos
             </h1>
@@ -114,42 +116,49 @@
                 pessoas do Brasil inteiro.</p>
 
         </div>
-        <div id="entrevistaImagem" class="bg-[url('entrevista.svg')] bg-no-repeat bg-cover bg-top-center w-11/12">
-        </div>
+
+        <div id="entrevistaImagem" class="bg-[url('entrevista.svg')] bg-no-repeat bg-cover bg-top-center w-11/12"></div>
+
         <div id="vagas" class="mt-11 w-2/4">
-            <h2 class="text-xl font-medium">Design</h2>
-            <div class="p-2 border border-solid border-gray-300 rounded-2xl shadow-md mt-2">
+            
+            <h2 class="text-xl font-medium mt-16 mb-8">Design</h2>
+
+            <div class="border border-solid border-gray-300 rounded-2xl mt-2 mb-6 p-6 flex flex-col gap-8">
                 <h3 class="text-lg font-medium">Product Designer</h3>
-                <ul>
+                <ul class="flex gap-6 text-gray-400">
                     <li>Full-time</li>
                     <li>Faixa salarial: R$7.000</li>
                 </ul>
             </div>
-            <div class="p-2 border border-solid border-gray-300 rounded-2xl shadow-md mt-2">
-                <h3>UX Designer</h3>
-                <ul>
+            <div class="border border-solid border-gray-300 rounded-2xl mt-2 mb-6 p-6 flex flex-col gap-8">
+                <h3  class="text-lg font-medium">UX Designer</h3>
+                <ul class="flex gap-6 text-gray-400">
                     <li>Full-time</li>
                     <li>Faixa salarial: R$6.000</li>
                 </ul>
-            </div>
-            <h2 class="text-xl font-medium">Desenvolvimento de Software</h2>
-            <div>
-                <h3>Desenvolvedor(a) iOS</h3>
-                <ul>
+            </div >
+            
+            <h2 class="text-xl font-medium mt-16 mb-8">Desenvolvimento de Software</h2>
+            
+            <div class="border border-solid border-gray-300 rounded-2xl mt-2 mb-6 p-6 flex flex-col gap-8">
+                <h3 class="text-lg font-medium">Desenvolvedor(a) iOS</h3>
+                <ul class="flex gap-6 text-gray-400">
                     <li>Full-time</li>
                     <li>Faixa salarial: R$8.000</li>
                 </ul>
             </div>
-            <div>
-                <h3>Desenvolvedor(a) Front-end</h3>
-                <ul>
+
+            <div class="border border-solid border-gray-300 rounded-2xl mt-2 mb-6 p-6 flex flex-col gap-8">
+                <h3 class="text-lg font-medium">Desenvolvedor(a) Front-end</h3>
+                <ul class="flex gap-6 text-gray-400">
                     <li>Full-time</li>
                     <li>Faixa salarial: R$7.000</li>
                 </ul>
             </div>
-            <div>
-                <h3>Desenvolvedor(a) Back-end</h3>
-                <ul>
+
+            <div class="border border-solid border-gray-300 rounded-2xl mt-2 mb-6 p-6 flex flex-col gap-8">
+                <h3 class="text-lg font-medium">Desenvolvedor(a) Back-end</h3>
+                <ul class="flex gap-6 text-gray-400"> 
                     <li>Full-time</li>
                     <li>Faixa salarial: R$8.000</li>
                 </ul>
@@ -157,26 +166,37 @@
         </div>
     </section>
 
-    <aside>
-        <h1>
-            <span>Veja o que nossos colaboradores falam sobre nós</span><br>
+    <aside id="OpiniãoDosColaboradores" class="flex flex-col items-center justify-evenly bg-red-50 p-16 w-11/12 rounded-2xl">
+
+        <h1 class="text-5xl leading-snug font-semibold text-center max-w-screen-2xl">
+            <span class="text-xl text-red-800 font-semibold py-2 px-4">Veja o que nossos colaboradores falam sobre nós</span><br>
             OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio
             possível.
         </h1>
-        <img src="julia.svg" alt="Júlia Castro">
-        <h2>Júlia Castro</h2>
-        <p>Desenvolvedora Web</p>
+
+        <img src="julia.svg" alt="Júlia Castro" class="h-14 w-14">
+        
+        <h2 class="text-base font-semibold ">Júlia Castro</h2>
+        
+        <p class="text-gray-400">Desenvolvedora Web</p>
+
     </aside>
 
-    <footer>
-        <h2>Acompanhe as nossas oportunidades</h2>
-        <p>Seja o primeiro a saber quando novas vagas serão abertas!</p>
-        <form>
-            <input type="text" name="" id="">
-            <button>Cadastrar</button>
+    <footer class="flex flex-col justify-around items-center mt-24 bg-gray-50 w-full p-24">
+        
+        <h2 class="text-4xl leading-snug font-semibold text-center max-w-screen-2xl">Acompanhe as nossas oportunidades</h2>
+        
+        <p class="font-normal text-gray-400 text-xl max-w-4xl self-center text-center">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+
+        <form class="flex gap-4">
+            <input type="email" name="" id="" class="border border-solid border-gray-300 rounded-2xl pl-4" required placeholder="Seu e-mail">
+            <button class="bg-red-900 text-white rounded-xl p-3 box-border">Cadastrar</button>
         </form>
-        <a>© 2022 OptimusTech. Todos os direitos reservados.</a>
+        
+        <a class="font-normal text-gray-400 text-xl max-w-4xl self-center text-center">© 2022 OptimusTech. Todos os direitos reservados.</a>
+
     </footer>
+
 </body>
 
 </html>
