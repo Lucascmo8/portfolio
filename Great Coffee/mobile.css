@@ -115,6 +115,7 @@
     /*Parte dos textos e botão de pegar café*/
     div#container {
         margin: auto;
+        top: 72px;
         text-align: center;
         margin-top: 3%;
     }

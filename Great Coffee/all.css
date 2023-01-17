@@ -34,6 +34,11 @@ header {
     justify-content: space-between;
     padding: 1.2em;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    box-sizing: border-box;
 }
 
 div#logo {
@@ -43,6 +48,10 @@ div#logo {
 /*Fim da parte do header*/
 
 /*Parte dos textos e botão de pegar café*/
+div#container{
+    position: relative;
+}
+
 div#container>h1 {
     color: var(--text-color);
     text-shadow: 2px 2px 15px rgba(255, 255, 255, 0.473);
