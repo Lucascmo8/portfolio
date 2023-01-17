@@ -108,6 +108,11 @@
         width: 18px;
         height: 18px;
         transition: 0.5s;
+        
+    }
+
+    nav{
+        position: absolute;
     }
 
     /*Fim da parte do header*/
@@ -118,6 +123,7 @@
         top: 72px;
         text-align: center;
         margin-top: 3%;
+        z-index: -1;
     }
 
     div#container>p {
