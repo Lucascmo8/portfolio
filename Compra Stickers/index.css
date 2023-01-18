@@ -1,0 +1,184 @@
+@import url("https://rsms.me/inter/inter.css");
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rebeccapurple;
+  color: #071723;
+}
+
+main {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+  overflow: hidden;
+  width: 550px;
+}
+
+/* .space-md {
+  margin-bottom: 32px;
+} */
+
+h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+header {
+  background: url(imagens/header.png) center right no-repeat;
+  background-size: cover;
+  height: 187px;
+  padding: 23px 36px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+header h1 {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+}
+
+header h1 span {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1.46;
+}
+
+form textarea {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 8px;
+  color: #071723;
+  height: 140px;
+  padding: 16px;
+  resize: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+fieldset{
+  padding: 0 32px;
+  border: none;
+}
+
+#tiposDeStickers{
+    display:flex;
+
+    flex-direction: column;
+  
+    gap: 16px;  
+}
+
+input[type=checkbox]{
+    accent-color: #2f3676;
+    background-color: #2f3676;
+    border: none;
+    outline: none;
+    
+    width: 24px;
+    height: 24px;
+
+    border-radius: 2px;
+}
+
+input[type=checkbox]:not(:checked):hover{
+    background: #191847;
+}
+
+input[type=checkbox]:not(:checked){
+    background-color: #2f3676;
+    appearance: none;
+}
+
+div.espaçosDoInput{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 9px;
+}
+
+fieldset#quantidadeDeStickers{
+    margin-top: 36px;
+    margin-bottom: 36px;
+}
+
+.counter{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+button{
+    border-radius: 2px;
+    border: none;
+    width: 42px;
+    height: 42px;
+}
+
+button#menos{
+    background-image: url(imagens/menos.svg);
+}
+
+button#mais{
+    background-image: url(imagens/mais.svg);
+}
+
+.counter input {
+  background: #dde3e9;
+  border: 1px solid #2f3676;
+  border-radius: 7px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 8px;
+  width: 60px;
+  height: 42px;
+}
+
+footer {
+  padding: 32px;
+  background: #dde3e9;
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer button {
+  appearance: none;
+  background: #2f3676;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 8px 32px;
+
+  width:133px;
+  height: 37px;
+}
+
+
+
+footer button:focus,
+footer button:hover {
+  border: 2px solid #2f3676;
+  background: #191847;
+}

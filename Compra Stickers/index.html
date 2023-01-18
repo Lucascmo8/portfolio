@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Teste Frontend VAGAS.com</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<main class="box">
+		<header >
+			<h1 class="title">Formulário<br />para compra de<br /><span>Pacote de Stickers</span></h1>
+		</header>
+		<div class="space"></div>
+		<form>
+
+			<fieldset id="tiposDeStickers">
+				<h2>Quais stickers:</h2>
+
+				<div class="espaçosDoInput"><input id="checkboxReact" type="checkbox" name="react" value="react" /><label for="checkboxReact">React</label></div>
+
+				<div class="espaçosDoInput"><input id="checkboxVue" type="checkbox" name="vue" value="vue" /><label for="checkboxReact">Vue</label></div>
+
+				<div class="espaçosDoInput"><input id="checkboxAngular" type="checkbox" name="angular" value="angular" /><label for="checkboxAngular">Angular</label></div>
+			</fieldset>
+
+			<div class="space-md"></div>
+
+			<fieldset id="quantidadeDeStickers">
+
+				<h2>Quantos stickers de cada?</h2>
+
+				<div class="counter">
+					<button id="menos"></button>
+					<input type="number" placeholder="0" />
+					<button id="mais"></button>
+				</div>
+			</fieldset>
+			<div class="space-md"></div>
+			<fieldset>
+				<label for="descricao">Observações:</label>
+				<div class="space"></div>
+				<textarea id="descricao" name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
+			</fieldset>
+			<div class="space-md"></div>
+			<footer>
+				<button id="btnSubmit" type="submit">Enviar</button>
+			</footer>
+		</form>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
