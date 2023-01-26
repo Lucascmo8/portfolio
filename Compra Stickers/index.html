@@ -5,6 +5,7 @@
 	<title>Teste Frontend VAGAS.com</title>
 	<meta charset="UTF-8" />
 	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="estilosCondicionais.css">
 </head>
 
 <body>
@@ -13,16 +14,16 @@
 			<h1 class="title">Formulário<br />para compra de<br /><span>Pacote de Stickers</span></h1>
 		</header>
 		<div class="space"></div>
-		<form>
+		<form  id="formulario">
 
 			<fieldset id="tiposDeStickers">
 				<h2>Quais stickers:</h2>
 
-				<div class="espaçosDoInput"><input id="checkboxReact" type="checkbox" name="react" value="react" /><label for="checkboxReact">React</label></div>
+				<div class="espaçosDoInput"><input id="checkboxReact" type="checkbox" name="react" value="react" data-checkbox="react"/><label for="checkboxReact">React</label></div>
 
-				<div class="espaçosDoInput"><input id="checkboxVue" type="checkbox" name="vue" value="vue" /><label for="checkboxReact">Vue</label></div>
+				<div class="espaçosDoInput"><input id="checkboxVue" type="checkbox" name="vue" value="vue" data-checkbox="vue"/><label for="checkboxReact">Vue</label></div>
 
-				<div class="espaçosDoInput"><input id="checkboxAngular" type="checkbox" name="angular" value="angular" /><label for="checkboxAngular">Angular</label></div>
+				<div class="espaçosDoInput"><input id="checkboxAngular" type="checkbox" name="angular" value="angular" data-checkbox="angular"/><label for="checkboxAngular">Angular</label></div>
 			</fieldset>
 
 			<div class="space-md"></div>
@@ -32,25 +33,38 @@
 				<h2>Quantos stickers de cada?</h2>
 
 				<div class="counter">
-					<button id="menos"></button>
-					<input type="number" placeholder="0" />
-					<button id="mais"></button>
+					<button id="menos" type="button"></button>
+					<input type="number" placeholder="0" id="quantidade"/>
+					<button id="mais" type="button"></button>
 				</div>
 			</fieldset>
+
 			<div class="space-md"></div>
+
 			<fieldset>
 				<label for="descricao">Observações:</label>
 				<div class="space"></div>
 				<textarea id="descricao" name="descricao" placeholder="Alguma dúvida? Recado?"></textarea>
 			</fieldset>
+
 			<div class="space-md"></div>
+
 			<footer>
-				<button id="btnSubmit" type="submit">Enviar</button>
+				<p id="resposta"></p>
+				<button id="btnSubmit" type="button" >Enviar</button>
 			</footer>
+
 		</form>
 	</main>
 
-	<script src="index.js"></script>
+	<script src="script/pegandoValoresDosCheckbox.js" type="module"></script>
+	<script src="script/funcaoQuantidade.js" type="module"></script>
+	<script src="script/enviandoAMensagem.js" type="module"></script>
+	<script src="script/validacoes.js" type="module"></script>
 </body>
 
 </html>
+
+<!-- 
+	botão de enviar com condição especial
+ -->
