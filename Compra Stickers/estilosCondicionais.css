@@ -1,0 +1,25 @@
+input[type=number].vazio{
+    background-color: #f59393;
+    border:1px solid #f33232;
+}
+
+button#menos.vazio{
+    background-image: url(imagens/menosVazio.svg);
+}
+
+button#menos:hover{
+    background-image: url(imagens/menosHover.svg);
+}
+
+button#mais:hover{
+    background-image: url(imagens/maisHover.svg);
+}
+
+button.vazio,button.vazio:hover{
+    background-color: #C5CFD6;
+    border: 1px solid #555555;
+    cursor: not-allowed;
+    border-radius: 4px;
+}
+
+

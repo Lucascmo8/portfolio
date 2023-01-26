@@ -125,6 +125,10 @@ fieldset#quantidadeDeStickers{
   align-items: center;
 }
 
+button,input[type=checkbox]{
+  cursor: pointer;
+}
+
 button{
     border-radius: 2px;
     border: none;
@@ -134,6 +138,7 @@ button{
 
 button#menos{
     background-image: url(imagens/menos.svg);
+    border: none;
 }
 
 button#mais{
@@ -152,11 +157,21 @@ button#mais{
   height: 42px;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
+
 footer {
   padding: 32px;
   background: #dde3e9;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  color: #00C57C;
+  font-size: 18px;
 }
 
 footer button {
@@ -174,8 +189,6 @@ footer button {
   width:133px;
   height: 37px;
 }
-
-
 
 footer button:focus,
 footer button:hover {
