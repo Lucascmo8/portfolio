@@ -28,5 +28,5 @@ function limpar(){
     validarBotao()
     PodeOuNaoEnviar()
 }
-console.log(URL)
+
 export{mensagem}
