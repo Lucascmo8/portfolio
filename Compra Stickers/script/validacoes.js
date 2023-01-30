@@ -47,7 +47,7 @@ function PodeOuNaoEnviar (){
 
 }
 
-// função de hover no menos
+// função de hover no botão menos
 btnMenos.addEventListener("mouseenter",hoverMenos)
 
 function hoverMenos(){
