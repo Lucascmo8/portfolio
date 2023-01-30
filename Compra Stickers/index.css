@@ -26,8 +26,11 @@ main {
   border-radius: 8px;
   box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
   margin: 20px auto;
-  overflow: hidden;
+  overflow: auto;
+  height: 90%;
   width: 80%; /* 550px antigo */
+  display: flex;
+  flex-direction: column;
 }
 
 .space-md {
@@ -38,6 +41,13 @@ h2 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 16px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 2;
 }
 
 header {
@@ -60,6 +70,8 @@ header h1 span {
   font-size: 24px;
   line-height: 1.46;
 }
+
+
 
 form textarea {
   background: #dde3e9;
