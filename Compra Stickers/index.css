@@ -4,12 +4,6 @@ html {
   font-family: "Inter", sans-serif;
 }
 
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: "Inter var", sans-serif;
-  }
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -26,9 +20,9 @@ main {
   border-radius: 8px;
   box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
   margin: 20px auto;
-  overflow: auto;
-  height: 90%;
-  width: 80%; /* 550px antigo */
+  overflow: hidden;
+  height:52.5rem;
+  max-width:550px;
   display: flex;
   flex-direction: column;
 }
