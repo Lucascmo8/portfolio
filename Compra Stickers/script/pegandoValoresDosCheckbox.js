@@ -8,7 +8,6 @@ btnEnviar.addEventListener("click", enviar)
 
 function enviar() {
     // marcados = []
-    checkboxes.forEach(checkbox => checkbox.checked ? marcados.push(checkbox.value) : console.log(``))
     mensagem()
 }
 

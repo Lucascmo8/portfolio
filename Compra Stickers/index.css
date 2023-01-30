@@ -27,12 +27,12 @@ main {
   box-shadow: 10px 22px 34px 0 rgba(0, 0, 0, 0.5);
   margin: 20px auto;
   overflow: hidden;
-  width: 550px;
+  width: 80%; /* 550px antigo */
 }
 
-/* .space-md {
+.space-md {
   margin-bottom: 32px;
-} */
+}
 
 h2 {
   font-size: 18px;
@@ -137,7 +137,7 @@ button{
 }
 
 button#menos{
-    background-image: url(imagens/menos.svg);
+    background-image: url(imagens/menosHover.svg);
     border: none;
 }
 
@@ -190,8 +190,12 @@ footer button {
   height: 37px;
 }
 
-footer button:focus,
 footer button:hover {
-  border: 2px solid #2f3676;
+  border: 1px solid #2f3676;
   background: #191847;
+  text-align: center;
+}
+
+footer button:focus{
+  outline: 2px solid #000;
 }

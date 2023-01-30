@@ -7,6 +7,7 @@ let inputQuantidade = document.getElementById("quantidade")
 btnMais.addEventListener("click", adicionar)
 btnMenos.addEventListener("click", subtrair)
 
+
 function adicionar() {
     inputQuantidade.value++
     validarBotao()
